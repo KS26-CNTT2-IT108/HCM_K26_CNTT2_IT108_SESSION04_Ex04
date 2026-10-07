@@ -1,0 +1,27 @@
+SESSION04
+Bài 4 : Quản lý đường dẫn trong hệ thống tệp
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Nhập môn công nghệ thông tin
+Họ và tên: LƯƠNG THANH THƯ
+
+Phần 1: Phân tích và so sánh ưu_nhược điểm:
+
+Cách 1: Đường dẫn tuyệt đối C:\Users\An\Desktop\Project\Data\users.csv
+Tính di động: Kém. Gắn cứng vào user An và ổ C:\, sang máy khác (user khác, ổ khác) sẽ lỗi không tìm thấy file.
+Độ dài câu lệnh: Dài, dễ gõ sai.
+Tính an toàn: Thấp. Lộ tên user và cấu trúc máy cá nhân khi chia sẻ code.
+
+Cách 2: Đường dẫn tương đối ../Data/users.csv
+Tính di động: Tốt. Chỉ phụ thuộc vị trí giữa code và dữ liệu, chép project đi đâu cũng chạy.
+Độ dài câu lệnh: Ngắn gọn, dễ đọc.
+Tính an toàn: Cao hơn. Không lộ thông tin máy, chạy nhất quán. Nhược điểm nhỏ: sai nếu chạy script từ thư mục khác với dự kiến.
+
+Phần 2: Lựa chọn.
+
+Chốt cách 2 (đường dẫn tương đối), vì An cần gửi cả thư mục Project cho bạn bè dùng user hoặc ổ đĩa khác mà vẫn chạy được.
++ Ký hiệu:
+. : thư mục hiện tại (ví dụ ./Data/users.csv là tìm Data ngay trong thư mục đang đứng).
+.. : thư mục cha, tức đi lên 1 cấp.
+
+Trong ../Data/users.csv, code nằm ở src nên .. đưa từ src ra Project, rồi vào Data lấy users.csv.
